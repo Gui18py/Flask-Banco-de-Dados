@@ -24,3 +24,8 @@ def add():
 
         return redirect(url_for("index"))
     return render_template("cadastro.html")
+
+
+@app.route("/users/login", methods=["GET", "POST"])
+def login():
+    render_template("login.html")
